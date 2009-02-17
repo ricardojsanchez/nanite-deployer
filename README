@@ -1,0 +1,9 @@
+This is just a sketch of a nanite agent that can handle tasks related to deployment.
+
+Right now it manages rabbitmq, monit and init.d services plus a cached remote git deploy stategy.
+THe git remote cache code is straight up stolen from capistrano for now. I think I might just use
+cap as a library though and just bypass net/ssh all together since the commands are effectively run
+locally where the agent runs anyway.
+
+So feedback welcome, want to make this work seamlessly. Right now it does not have proper error 
+reporting or logging or any must haves like that but its a start.
