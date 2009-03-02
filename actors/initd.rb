@@ -1,4 +1,5 @@
-class Initd < Nanite::Actor
+class Initd
+  include Nanite::Actor
   expose :status, :start, :stop, :restart, :rc_status, :zap
   
   def status(service)

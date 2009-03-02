@@ -1,7 +1,8 @@
 # from a pastie by raggi
 require 'drb'
 
-class God < Nanite::Actor
+class God
+  include Nanite::Actor
   expose :status, :stop, :start, :restart
 
   def initialize

@@ -1,4 +1,5 @@
-class Monit < Nanite::Actor
+class Monit
+  include Nanite::Actor
   expose :status, :start, :stop, :restart,
          :monitor, :unmonitor, :reload, :validate
   

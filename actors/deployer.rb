@@ -1,7 +1,8 @@
 require File.join(File.dirname(__FILE__), '../lib/git')
 require File.join(File.dirname(__FILE__), '../lib/remote_cache')
 
-class Deployer < Nanite::Actor
+class Deployer
+  include Nanite::Actor
 
   expose :deploy
 
